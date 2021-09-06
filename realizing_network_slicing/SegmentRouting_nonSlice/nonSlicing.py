@@ -20,7 +20,7 @@ class TrafficSlicing(app_manager.RyuApp):
 
 
         self.ipv6_to_port = {
-            # outport = self.ipv6_to_port[dpid][mac_src_add]
+            # outport = self.ipv6_to_port[dpid][ipv6_dst_add]
             1: {"10:0:0:0:0:0:0:01": 2, "10:0:0:0:0:0:0:02": 3},
             2: {"10:0:0:0:0:0:0:03": 2, "10:0:0:0:0:0:0:04": 3},
         }
