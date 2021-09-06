@@ -20,7 +20,7 @@ class TrafficSlicing(app_manager.RyuApp):
 
 
         self.mac_to_port = {
-            # outport = self.mac_to_port[dpid][mac_src_add]
+            # outport = self.mac_to_port[dpid][mac_dst_add]
             1: {"00:00:00:00:00:01": 2, "00:00:00:00:00:02": 3},
             2: {"00:00:00:00:00:03": 2, "00:00:00:00:00:04": 3},
             # outport = self.mac_to_port[dpid][mac_dst_add][mac_src_add]
